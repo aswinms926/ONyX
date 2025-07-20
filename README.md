@@ -2,14 +2,6 @@
 
 ## Developed for Carehack Hackathon
 
-**Team Members:**
-- Nikhil Tom
-- Prince Ani
-- Cherian Chirackal
-- Aswin MS
-
----
-
 ## Project Overview
 ONyX is a web-based collection of simple, engaging games designed to boost mental agility and cognitive skills. Developed as part of the Carehack hackathon, this project aims to provide a fun and interactive way for users to exercise their attention, memory, and flexibility through a curated set of mini-games.
 
