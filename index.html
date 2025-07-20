@@ -1,0 +1,79 @@
+<!--
+    Tux4ME is designed to develop and enhance the mental power of the user by means of simple games.
+    Copyright (C) 2015  Tux4KIDS
+    Project website : <tux4me.azurewebsites.net> //This will be moved to Google app engine soon.
+    Tux4Kids website : <http://tux4kids.alioth.debian.org>
+-->
+<html lang="en">
+<head>
+  <title>ONyX</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+  <link rel="import" href="elements.html">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <template is="dom-bind" id="app">
+    <div class="container" style="margin: 40px auto; max-width: 900px;">
+      <h1 style="text-align:center; font-family:Georgia; color:#009688;">ONyX</h1>
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+        <!-- Attention Card -->
+        <paper-material elevation="3" class="demo-cards" style="min-width:260px; margin: 16px;">
+          <div class="demo_card_content">
+            <paper-toolbar class="medium-tall" style="background-color:#01579b;box-shadow: 0px 5px 0px #cfd8dc">
+              <div>Attention</div>
+            </paper-toolbar>
+          </div>
+          <div>
+            <paper-menu>
+              <paper-item><paper-button raised style="background:#01579b; color:white; width:100%;" onclick="launchGame('migratingFlocks.html')">Migrating Flocks</paper-button></paper-item>
+              <paper-item><paper-button raised style="background:#01579b; color:white; width:100%;" onclick="launchGame('catchTheFlow.html')">Catch the Flow</paper-button></paper-item>
+              <paper-item><paper-button raised style="background:#01579b; color:white; width:100%;" onclick="launchGame('motionCommotion.html')">Motion Commotion</paper-button></paper-item>
+            </paper-menu>
+          </div>
+        </paper-material>
+        <!-- Memory Card -->
+        <paper-material elevation="3" class="demo-cards" style="min-width:260px; margin: 16px;">
+          <div class="demo_card_content">
+            <paper-toolbar class="medium-tall" style="background-color:#00796b;box-shadow: 0px 5px 0px #cfd8dc">
+              <div>Memory</div>
+            </paper-toolbar>
+          </div>
+          <div>
+            <paper-menu>
+              <paper-item><paper-button raised style="background:#00796b; color:white; width:100%;" onclick="launchGame('highOrLow.html')">High or Low</paper-button></paper-item>
+              <paper-item><paper-button raised style="background:#00796b; color:white; width:100%;" onclick="launchGame('mindMath.html')">Mind Math</paper-button></paper-item>
+            </paper-menu>
+          </div>
+        </paper-material>
+        <!-- Flexibility Card -->
+        <paper-material elevation="3" class="demo-cards" style="min-width:260px; margin: 16px;">
+          <div class="demo_card_content">
+            <paper-toolbar class="medium-tall" style="background-color:#ff5722;box-shadow: 0px 5px 0px #cfd8dc">
+              <div>Flexibility</div>
+            </paper-toolbar>
+          </div>
+          <div>
+            <paper-menu>
+              <paper-item><paper-button raised style="background:#ff5722; color:white; width:100%;" onclick="launchGame('doubleTrouble.html')">Double Trouble</paper-button></paper-item>
+              <paper-item><paper-button raised style="background:#ff5722; color:white; width:100%;" onclick="launchGame('driftME.html')">Drift Me</paper-button></paper-item>
+            </paper-menu>
+          </div>
+        </paper-material>
+      </div>
+    </div>
+    <div id="gameContainer" style="display:none;"></div>
+  </template>
+  <script>
+    function launchGame(gameFile) {
+      document.querySelector('.container').style.display = 'none';
+      var gameContainer = document.getElementById('gameContainer');
+      gameContainer.innerHTML = '<iframe src="' + gameFile + '" style="width:100vw;height:100vh;border:none;"></iframe>';
+      gameContainer.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
