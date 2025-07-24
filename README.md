@@ -3,7 +3,7 @@
 ## Developed for Carehack Hackathon
 
 ## Project Overview
-ONyX is a web-based collection of simple, engaging games designed to boost mental agility and cognitive skills. Developed as part of the Carehack hackathon, this project aims to provide a fun and interactive way for users to exercise their attention, memory, and flexibility through a curated set of mini-games.
+ONyX is a web-based suite of mini-games designed to boost cognitive skills in children, with a special focus on accessibility and inclusivity. Developed for the Carehack hackathon, ONyX aims to provide engaging, accessible experiences that help children with diverse abilities—especially those with cognitive or learning disabilities—improve their attention, memory, and flexibility in a fun, stigma-free environment.
 
 ### 🎯 **Key Features**
 - **Single Dashboard:** A clean, modern dashboard presents three main categories: Attention, Memory, and Flexibility.
